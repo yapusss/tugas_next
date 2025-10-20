@@ -20,26 +20,26 @@ const MenuItem: React.FC<MenuItemProps> = ({ name, description, price }) => (
 const MenuPage: React.FC = () => {
     const riceBowls = [
         {
-            name: 'Chicken Katsu Bowl',
-            description: 'Ayam katsu dengan saus teriyaki manis di atas nasi pulen.',
+            name: 'Chicken Katsu',
+            description: 'Nasi Ayam Katsu.',
             price: 'Rp 15.000'
         },
         {
-            name: 'Beef Black Pepper Bowl',
-            description: 'Daging sapi empuk dengan saus lada hitam pedas dan paprika.',
+            name: 'Korean Spicy Chicken',
+            description: 'Nasi Ayam Pedas Korea.',
             price: 'Rp 15.000'
         },
         {
-            name: 'Salmon Mentai Bowl',
-            description: 'Potongan salmon segar dengan saus mentai creamy yang dibakar.',
+            name: 'Sheredded Chicken',
+            description: 'Nasi Ayam Suwir.',
             price: 'Rp 15.000'
         }
     ];
 
     return (
         <div className="container mx-auto px-6 py-12 fade-in">
-            <h2 className="text-4xl font-bold text-center mb-2 text-gray-800">Menu Spesial Kami</h2>
-            <p className="text-center text-gray-600 mb-12">Pilihan terbaik untuk memanjakan lidah Anda.</p>
+            <h2 className="text-4xl font-bold text-center mb-2 text-gray-800">Menu Jastip Kami</h2>
+            <p className="text-center text-gray-600 mb-12">Pilihan terbaik simple ga perlu ke kantin</p>
             
             <section id="rice-bowls" className="mb-16">
                 <h3 className="text-3xl font-semibold mb-8 text-orange-500 border-b-2 border-orange-200 pb-2">Rice Bowls</h3>
