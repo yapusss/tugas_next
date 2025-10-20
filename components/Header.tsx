@@ -12,7 +12,7 @@ const Header: React.FC = () => {
       <nav className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="text-2xl font-bold text-gray-800">
             <Link href="/" className="hover:text-orange-500 transition-colors">
-                Ekonomi<span className="text-orange-500">Kreatif</span>
+                Ekonomi Kreatif
             </Link>
         </div>
         <div className="flex space-x-2 md:space-x-4">
