@@ -41,27 +41,6 @@ const MenuPage: React.FC = () => {
         }
     ];
 
-    const snacks = [
-        {
-            imgSrc: 'https://picsum.photos/400/300?image=102',
-            name: 'Kentang Goreng Truffle',
-            description: 'Kentang goreng renyah dengan minyak truffle dan keju parmesan.',
-            price: 'Rp 25.000'
-        },
-        {
-            imgSrc: 'https://picsum.photos/400/300?image=312',
-            name: 'Chicken Wings BBQ',
-            description: 'Sayap ayam juicy dengan balutan saus barbeque khas BowlBliss.',
-            price: 'Rp 30.000'
-        },
-        {
-            imgSrc: 'https://picsum.photos/400/300?image=993',
-            name: 'Tahu Cabe Garam',
-            description: 'Tahu krispi yang digoreng garing dengan bumbu cabe dan garam.',
-            price: 'Rp 20.000'
-        }
-    ];
-
     return (
         <div className="container mx-auto px-6 py-12 fade-in">
             <h2 className="text-4xl font-bold text-center mb-2 text-gray-800">Menu Spesial Kami</h2>
@@ -71,13 +50,6 @@ const MenuPage: React.FC = () => {
                 <h3 className="text-3xl font-semibold mb-8 text-orange-500 border-b-2 border-orange-200 pb-2">Rice Bowls</h3>
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {riceBowls.map(item => <MenuItem key={item.name} {...item} />)}
-                </div>
-            </section>
-
-            <section id="snacks">
-                <h3 className="text-3xl font-semibold mb-8 text-orange-500 border-b-2 border-orange-200 pb-2">Cemilan</h3>
-                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                    {snacks.map(item => <MenuItem key={item.name} {...item} />)}
                 </div>
             </section>
         </div>
