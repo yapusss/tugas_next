@@ -1,12 +1,9 @@
 
+"use client";
 import React from 'react';
-import type { Page } from '../types';
+import Link from 'next/link';
 
-interface HomePageProps {
-    setCurrentPage: (page: Page) => void;
-}
-
-const HomePage: React.FC<HomePageProps> = ({ setCurrentPage }) => {
+const HomePage: React.FC = () => {
     return (
         <div className="relative h-[calc(100vh-68px)]">
             <div 
@@ -21,12 +18,12 @@ const HomePage: React.FC<HomePageProps> = ({ setCurrentPage }) => {
                 <p className="text-lg md:text-xl text-gray-200 max-w-2xl mb-8">
                     Nikmati jastip makan siang dan gorengan setiap pagi!.
                 </p>
-                <button
-                    onClick={() => setCurrentPage('menu')}
+                <Link
+                    href="/menu"
                     className="bg-orange-500 text-white font-bold py-3 px-8 rounded-full hover:bg-orange-600 transition-all duration-300 transform hover:scale-105 shadow-lg"
                 >
                     Lihat Menu Kami
-                </button>
+                </Link>
             </div>
         </div>
     );
