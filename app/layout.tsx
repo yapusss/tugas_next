@@ -2,7 +2,7 @@ import type { ReactNode } from 'react';
 
 export const metadata = {
   title: 'Ekonomi Kreatif RPL',
-  description: 'Website profil perusahaan sederhana untuk bisnis kuliner.',
+  description: 'Website profil Ekonomi Kreatif RPL.',
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
